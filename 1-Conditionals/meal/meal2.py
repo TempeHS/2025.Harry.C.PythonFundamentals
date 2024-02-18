@@ -1,6 +1,7 @@
 def main():
     time = input("What's the time")
-    print(convert(time))
+    z = convert(time)
+    print(z)
 
 
 def convert(time):
@@ -11,6 +12,8 @@ def convert(time):
     return z
 
 
-if z == ("7" <= "8"):
+if z >= 7 or z <= 8:
     print("Breakfast time")
+
+
 main()
