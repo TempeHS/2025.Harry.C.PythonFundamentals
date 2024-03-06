@@ -8,8 +8,8 @@ fruit = {
 
 value = fruit.get(user_input)
 
-
-if user_input in fruit:
-    print("Calories: ", value)
-else:
-    print("")
+while True:
+    if user_input in fruit:
+        print("Calories: ", value)
+    else:
+        print("")
