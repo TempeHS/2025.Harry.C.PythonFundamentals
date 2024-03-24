@@ -20,5 +20,4 @@ except ValueError:
     print("Command-line argument is not a number")
     sys.exit(1)
 
-
 print(f"${amount:,.4f}")
