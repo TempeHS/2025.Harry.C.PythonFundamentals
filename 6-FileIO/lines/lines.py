@@ -16,6 +16,7 @@ except FileNotFoundError:
 
 
 file_name = sys.argv[1]
+
 print(total)
 
 if len(sys.argv) < 2:
