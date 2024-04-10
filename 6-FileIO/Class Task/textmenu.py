@@ -10,8 +10,6 @@ while user_input != "4":
         print("You bought the second Item, is there anything else you would like")
     elif user_input == "3":
         print("You bought the second Item, is there anything else you would like")
-    elif user_input == "4":
-        break
     else:
-        print("Please pick an option 1-4")
+        print("Please pick an option")
         continue
