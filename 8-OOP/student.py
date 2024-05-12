@@ -1,22 +1,21 @@
 class Student:
     def __init__(self, name, house):
-        if not name:
-            raise ValueError("Missing name")
-        if house not in ["Gryffindor", "Hufflepuff", "Ravenclaw"]:
-            raise ValueError("Invalid House")
         self.name = name
         self.house = house
 
+    def __str__(self):
+        return f"{self.name} from {self.house}"
+
+    @classmethod
+    def get(cls):
+        name = input("Name: ")
+        house = input("House: ")
+        return cls(name, house)
+
 
 def main():
-    student = get_student()
-    print(f"{student.name} from {student.house}")
-
-
-def get_student():
-    name = input("Name: ")
-    house = input("House: ")
-    return Student(name, house)
+    student = Student.get()
+    print(student)
 
 
 if __name__ == "__main__":
