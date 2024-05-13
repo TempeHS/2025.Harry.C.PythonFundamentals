@@ -1,7 +1,5 @@
 from datetime import date
-
 import inflect
-
 import sys
 
 p = inflect.engine()
@@ -29,9 +27,7 @@ class Seasons:
 
 def main():
     test = Seasons.get_date()
-    words = p.number_to_words(
-        test.calc_time(),
-    ).capitalize()
+    words = p.number_to_words(test.calc_time()).capitalize()
     words += " minutes"
     print(words)
 
