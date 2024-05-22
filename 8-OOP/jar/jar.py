@@ -8,7 +8,7 @@ class Jar:
 
     def deposit(self, n):
         self.cookies += n
-        if n > 12:
+        if n > self.capacity:
             raise ValueError("Too many cookies")
         return n
 
@@ -28,7 +28,7 @@ class Jar:
 def main():
 
     jar = Jar()
-    jar.deposit(5)
+    jar.deposit(11)
     jar.withdraw(3)
     print(jar)
 
